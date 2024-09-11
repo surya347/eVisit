@@ -1,0 +1,46 @@
+<template>
+	<template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+    </template>
+	<div class="slds-card__body slds-card__body_inner">
+		<div class="slds-path">
+			<div class="slds-grid slds-path__track">
+				<div class="slds-grid slds-path__scroller-container">
+					<div class="slds-path__scroller" role="application">
+						<div class="slds-path__scroller_inner">
+							<ul class="slds-path__nav" role="listbox" aria-orientation="horizontal">
+								<template if:true={leadPicklistValues}>
+									<template for:each={leadPicklistValues} for:item="item">
+										
+										<li  data-id={item.value} onclick={handleSelect} key={item.value} class="slds-path__item slds-is-incomplete" role="presentation">
+											<a  data-id={item.value} onclick={handleSelect} aria-selected="true" class="slds-path__link" href="javascript:void(0);" id={item.value} role="option"
+												tabindex="0">
+												<span class="slds-path__stage">
+													<lightning-icon icon-name="utility:check" alternative-text="Warning!" variant="inverse" size="x-small"></lightning-icon>
+													<span class="slds-assistive-text">Current Status:</span>
+												</span>
+												<span class="slds-path__title">{item.label}</span>
+											</a>
+										</li>
+										
+									</template>
+								</template>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="slds-grid slds-path__action">
+					<button class="slds-button slds-button_brand slds-path__mark-complete" onclick={handleMarkAsSelected}>
+						<lightning-icon icon-name="utility:check" alternative-text="Warning!" variant="inverse" size="x-small"></lightning-icon> &nbsp;
+						Mark Status as Complete
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <template lwc:if={isModalOpen}>
+        <c-lead-conversion-pre-details ultimate-parent-account-name={selectedUltimateParentLeadCompany} parent-account-name={selectedParentLeadCompany} acount-name={selectedCompanyValue} related-contacts={relatedContacts} related-parent-contacts={relatedParentContacts} related-ultimate-parent-contacts={relatedUltimateParentContacts} onclose={closeModal} onsave={handleConverLead}></c-lead-conversion-pre-details>
+    </template>
+    
+</template>

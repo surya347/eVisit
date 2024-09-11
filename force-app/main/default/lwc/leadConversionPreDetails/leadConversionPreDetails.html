@@ -1,0 +1,81 @@
+<template>
+   
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <template if:true={isShowSpinner}>
+            <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+        </template>
+        <div class="slds-modal__container">
+         <!-- modal header start -->
+           <header class="slds-modal__header">
+              <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hideModalBox}>
+                 <lightning-icon icon-name="utility:close"
+                    alternative-text="close"
+                    variant="inverse"
+                    size="small" 
+                    onclick={hideModalBox}></lightning-icon>
+                 <span class="slds-assistive-text">Close</span>
+              </button>
+              <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Convert Lead</h2>
+           </header>
+       
+           <!-- modal body start -->
+           <div class="modal_body slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+            <div>
+                <lightning-accordion onsectiontoggle={handleSectionToggle}
+                    active-section-name={activeSection}>
+                        <lightning-accordion-section name="Account" label="Account">
+                            <div class="slds-p-around_medium slds-box">
+                                <!-- <lightning-card class="slds-text-heading_small" variant="Narrow"  title="New Account" icon-name="standard:account"> -->
+                                    <lightning-input  class="slds-p-horizontal_small" type="text" label="Account Name" value={acountName} disabled></lightning-input>
+                                <!-- </lightning-card> -->
+                            </div>
+                        </lightning-accordion-section>
+                        <template if:true={showParentAccount}>
+                        <lightning-accordion-section name="Parent Account" label="Parent Account">
+                            <div class="slds-p-around_medium slds-box">
+                                <!-- <lightning-card class="slds-text-heading_small" variant="Narrow"  title="New Account" icon-name="standard:account"> -->
+                                    <lightning-input  class="slds-p-horizontal_small" type="text" label="Parent Account Name" value={parentAccountName} disabled></lightning-input>
+                                <!-- </lightning-card> -->
+                            </div>
+                        </lightning-accordion-section>
+                        </template>
+                        <template if:true={showUltimateParentAccount}>
+                            <lightning-accordion-section name="Ultimate Parent Account" label="Ultimate Parent Account">
+                                <div class="slds-p-around_medium slds-box">
+                                    <!-- <lightning-card class="slds-text-heading_small" variant="Narrow"  title="New Account" icon-name="standard:account"> -->
+                                        <lightning-input  class="slds-p-horizontal_small" type="text" label="Ultimate Parent Account Name" value={ultimateParentAccountName} disabled></lightning-input>
+                                    <!-- </lightning-card> -->
+                                </div>
+                            </lightning-accordion-section>
+                        </template>
+                        <lightning-accordion-section name="Contacts" label="Contact">
+                            <template if:true={isShowContactInDatatable}>
+                                <div style="height:200px;">
+                                    <lightning-datatable
+                                            key-field="id"
+                                            data={contactDataForDatatable}
+                                            columns={columns}
+                                            show-row-number-column
+                                            hide-checkbox-column>
+                                    </lightning-datatable>
+                                </div>
+                            </template>
+                            <template if:false={isShowContactInDatatable}>
+                                <p  class="slds-p-horizontal_small">No Related Contacts Available</p>
+                            </template>
+                        </lightning-accordion-section>
+
+                </lightning-accordion>
+            </div>
+           </div>
+ 
+           <!-- modal footer start-->
+           <footer class="slds-modal__footer">
+              <button class="slds-button slds-button_neutral" onclick={hideModalBox}>Cancel</button>
+              <button class="slds-button slds-button_brand" onclick={handleLeadConversion}>Convert</button>
+           </footer>
+        
+        </div>
+     </section>
+     <div class="slds-backdrop slds-backdrop_open"></div>
+</template>

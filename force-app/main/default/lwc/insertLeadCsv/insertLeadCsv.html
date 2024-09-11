@@ -1,0 +1,35 @@
+<template>
+<lightning-card icon-name="custom:custom19" title='Parent Lead CSV uploader'>
+        <div style="margin-left: 3%">
+            <lightning-file-upload accept={acceptedFormats} 
+                                   label="Upload Parent Lead CSV" 
+                                   multiple="multiple" 
+                                   onuploadfinished={handleUploadFinished} 
+                                   record-id={recordId}></lightning-file-upload>
+        </div>
+
+
+        <div if:true={error}> 
+            {error}
+        </div><br/>
+
+      
+    </lightning-card>
+
+    <lightning-card icon-name="custom:custom19" title='Lead CSV uploader'>
+        <div style="margin-left: 3%">
+            <lightning-file-upload accept={acceptedFormats} 
+                                   label="Upload Definitive Lead CSV" 
+                                   multiple="multiple" 
+                                   onuploadfinished={handleUploadDefinitiveLead} 
+                                   record-id={recordId}></lightning-file-upload>
+        </div>
+
+
+        <div if:true={error}> 
+            {error}
+        </div><br/>
+
+      
+    </lightning-card>
+</template>

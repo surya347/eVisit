@@ -1,0 +1,40 @@
+/* .card{
+	background-color: white;
+	border-radius: 0.25rem;
+}
+details > summary {
+    list-style-type: '▶';
+}
+
+details[open] > summary {
+    list-style-type: '▶';
+}
+
+details {
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
+details[open] > summary {
+    margin-bottom: 1rem;
+}
+
+summary::-webkit-details-marker {
+  color: #B6B6B6;
+  font-size: 20px;
+  margin-right: 2px;
+}
+summary::-webkit-details-marker:hover {
+  color: red;
+} */
+
+.card{
+  background-color: white;
+  padding: 5px;
+  border-radius: 0.25rem;
+  display: flex;
+}
+
+.path_section{
+  width: 100vw;
+}

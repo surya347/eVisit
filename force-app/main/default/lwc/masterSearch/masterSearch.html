@@ -1,0 +1,102 @@
+<template>
+    <div class="">
+        <div class="slds-grid slds-gutters slds-align_absolute-center">
+            <div class="slds-col searc_box">
+                <lightning-input
+                    name="enter-search"
+                    label="Search when user hits the 'search' button"
+                    type="search"
+                    onchange={handleSearch}
+                ></lightning-input>
+                <!-- <input class="search_input" type="search" placeholder="Search name" onchange={handleSearch} value={searchKeyValue}/> -->
+            </div>
+            <div class="slds-col src_btn">
+                <lightning-button label="Search" onclick={searchRecords} variant="brand"></lightning-button>
+            </div>
+
+        </div>
+
+        <!-- custome combo-box -->
+        <div class="master_search slds-m-top_x-small">
+            <template if:true={autoCompleteOptions}>
+                <template for:each={autoCompleteOptions} for:item="option">
+                    <div class="slds-p-around_small  slds-box" key={option.Id} data-id={option.Id} data-name={option.Company}
+                        onclick={handleClickList}>
+                        <template if:true={showContactDetails}>
+                            <h1>{option.Name}</h1>
+                        </template>
+                        <template if:false={showContactDetails}>
+                            <h1>{option.Company}</h1>
+                        </template>
+                    </div>
+                </template>
+            </template>
+            <template if:true={isFocus}>
+                <template if:true={isUserSystemAdmin}>
+                    <div class="slds-p-around_small  slds-box create_form" onclick={handleCreateNew}
+                        data-id={searchForObject}>
+                        <div>
+                            <lightning-icon class="slds-p-right_small" icon-name="utility:add"
+                                alternative-text="add record" size="x-small" title="large size">
+                            </lightning-icon>
+                        </div>
+                        <div>
+                            <h1>Create new record</h1>
+                        </div>
+                    </div>
+                </template>
+                    <div class="slds-m-top_x-small">
+                        <h1 class="slds-text-align_center ">Record not available</h1>
+                    </div>
+
+                <!-- <p class="slds-text-heading_small slds-text-align_center slds-p-around_small">No related data found.</p> -->
+            </template>
+        </div>
+
+        <!-- modal to show parent/ultimate lead -->
+        <template if:true={showParentModal}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <template if:true={isShowSpinner}>
+                    <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+                </template>
+                <div class="slds-modal__container">
+                 <!-- modal header start -->
+                   <header class="slds-modal__header">
+                      <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hideModalBox}>
+                         <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" 
+                            onclick={hideModalBox}></lightning-icon>
+                         <span class="slds-assistive-text">Close</span>
+                      </button>
+                      <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Lead Details</h2>
+                   </header>
+               
+                   <!-- modal body start -->
+                   <div class="modal_body slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <lightning-record-view-form
+                        record-id={selectedItem}
+                        object-api-name={searchForObject}
+                        density="Comfy"
+                        onload={handleOnLoad}
+                    >
+                        <div class="slds-theme_default">
+                            <lightning-output-field class="slds-border_bottom slds-text-heading_small slds-m-top_small" field-name="Ultimate_Parent_Lead__c"> </lightning-output-field>
+                            <lightning-output-field class="slds-border_bottom slds-text-heading_small slds-m-top_small" field-name="Parent_Lead__c"> </lightning-output-field>
+                            <div>
+                                <p class="slds-m-bottom_xxx-small slds-m-left_xx-small slds-m-top_small">Company</p>
+                                <a class="slds-m-left_xx-small slds-text-heading_small slds-m-bottom_medium" onclick={handleNaviagteToRecord} >{selectedCompany}</a>
+                            </div>
+                            <!-- <lightning-output-field field-name="Company"></lightning-output-field></a> -->
+                        </div>
+                    </lightning-record-view-form>
+                    <lightning-output-field field-name="Id"></lightning-output-field>
+                     </div>
+                   <!-- modal footer start-->
+                </div>
+             </section>
+             <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+    </div>
+</template>

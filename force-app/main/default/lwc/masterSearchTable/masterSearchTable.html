@@ -1,0 +1,31 @@
+<template>
+    <lightning-tabset variant="scoped">
+        <lightning-tab label="Leads" value="Lead" onactive={handleActive}>
+            <c-master-search search-key-type="Company" search-for-object="Lead" ></c-master-search>
+            <!--leads data-table starts here -->
+            <!-- <div style="height: 300px;">
+                <lightning-datatable
+                        key-field="id"
+                        data={recordData}
+                        columns={columns}
+                        show-row-number-column
+                        hide-checkbox-column>
+                </lightning-datatable>
+            </div> -->
+        </lightning-tab>
+        <lightning-tab label="Contacts" value="Contact" onactive={handleActive}>
+            <c-master-search search-key-type="Name" search-for-object="Contact"></c-master-search>
+
+             <!--contact data-table starts here -->
+             <!-- <div style="height: 300px;">
+                <lightning-datatable
+                        key-field="id"
+                        data={recordData}
+                        columns={columns}
+                        show-row-number-column
+                        hide-checkbox-column>
+                </lightning-datatable>
+            </div> -->
+        </lightning-tab>
+    </lightning-tabset>
+</template>

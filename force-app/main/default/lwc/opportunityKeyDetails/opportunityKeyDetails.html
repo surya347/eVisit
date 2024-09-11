@@ -1,0 +1,39 @@
+<template>
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+    </template>
+    <template if:true={showData}> 
+    <lightning-layout multiple-rows class="box">
+        <lightning-layout-item size="12" padding="around-small" small-device-size="12" medium-device-size="6" large-device-size="6" >
+            <div class="custom-box">
+                <h2><b>Key Fields</b> </h2><br/>
+                    <lightning-record-form
+                        object-api-name={objectApiName}
+                        record-id={recordId}
+                        fields={fields}
+                        density="Compact"
+                    >
+                    </lightning-record-form>
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-small" small-device-size="12" medium-device-size="6" large-device-size="6">
+            <div class="custom-box">
+            <h2><b>Exit Criteria For {selectedStage} Stage</b> </h2><br/>
+            <template if:true={showExitCrtiteria}>
+                <ul class="list">
+                <template for:each={exitCriteria} for:item="obj">
+                    <li key={obj.id} class="slds-m-left_medium slds-m-bottom_x-small">{obj.criteria}</li>
+                </template>
+                </ul>
+            </template>
+             <template if:false={showExitCrtiteria}>
+                <p>No exit criteria exist for this stage</p>
+            </template>
+
+
+            </div>
+        </lightning-layout-item>
+    </lightning-layout>
+    </template>
+    </template>
+</template>

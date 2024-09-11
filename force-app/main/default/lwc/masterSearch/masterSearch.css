@@ -1,0 +1,25 @@
+.master_search{
+    overflow:auto;
+    height: 200px;
+    cursor: pointer;
+}
+
+.searc_box{
+    padding: 0px !important;
+    width: 100vw;
+}
+
+.src_btn{
+    margin-top: 20px;
+}
+
+.create_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1{
+    font-size: 16px;
+}

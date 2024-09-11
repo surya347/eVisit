@@ -1,0 +1,93 @@
+<template>
+   <template if:true={openModal}>
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <template if:true={isShowSpinner}>
+            <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+        </template>
+        <div class="slds-modal__container">
+         <!-- modal header start -->
+           <header class="slds-modal__header">
+              <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hideModalBox}>
+                 <lightning-icon icon-name="utility:close"
+                    alternative-text="close"
+                    variant="inverse"
+                    size="small" 
+                    onclick={hideModalBox}></lightning-icon>
+                 <span class="slds-assistive-text">Close</span>
+              </button>
+              <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Opportunity Stage Exit Criteria</h2>
+           </header>
+       
+           <!-- modal body start -->
+           <div class="modal_body slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+            <lightning-record-edit-form record-id={recordId} object-api-name="Opportunity" density="compact" onerror={handleError} onsubmit={handleSubmitExitCriteria}  onsuccess={handleUpdateStage}>
+                    <lightning-messages> </lightning-messages>
+                    <template if:true={isProposalandNegotiationStage}>
+                        <lightning-input-field field-name="Proposal_Budget_Alignments__c" required>
+                        </lightning-input-field>
+                        <lightning-input-field field-name="Exec_Sponsor_Identified__c" required>
+                        </lightning-input-field>
+                        <lightning-input-field field-name="Custom_Demo_Completed__c" required>
+                        </lightning-input-field>
+                    </template>
+                    <template if:true={isContractingandClosureStage}>
+                        <lightning-input-field field-name="Workflow_Diagram_SLT_Signoff__c" required>
+                        </lightning-input-field>
+                        <lightning-input-field field-name="Integrations_Diagram_SLT_Signoff__c" required>
+                        </lightning-input-field>
+                        <lightning-input-field field-name="Articulated_SOW_SLT_Signoff__c" required>
+                        </lightning-input-field>
+                        <lightning-input-field field-name="Pricing_Approval_SLT_Signoff__c" required>
+                        </lightning-input-field>
+                         <lightning-input-field field-name="Implementation_Start_Date_SLT_Signoff__c" required>
+                        </lightning-input-field>
+                    </template>
+                    <template if:true={isCloseStage}>
+                        <lightning-combobox
+                            name="progress"
+                            label="Stage"
+                            value={stageValue}
+                            placeholder="Select stage"
+                            options={options}
+                            class="slds-m-bottom_medium"
+                            onchange={handleChangeStageModal} required></lightning-combobox>
+                        
+                        <template if:true={showStageModal}>
+                            <lightning-input-field field-name="eVisit_Noted_Differentiators__c" >
+                            </lightning-input-field>
+                            <template if:false={hideRequiredCheckboxField}>
+                            <lightning-input-field field-name="All_Contract_Details_complete__c" required>
+                            </lightning-input-field>
+                            <lightning-input-field field-name="Billing_Contact_identified__c" required>
+                            </lightning-input-field>
+                            <lightning-input-field field-name="PO_Populated__c" required>
+                            </lightning-input-field>
+                            </template>
+                        </template>
+                    </template>
+                    <footer class="slds-modal__footer">
+                        <lightning-button
+                                class="slds-m-top_small slds-m-around_x-small"
+                                variant="neutral"
+                                label="Cancel"
+                                onclick={hideModalBox}
+                            >
+                         </lightning-button>
+                          <lightning-button
+                                class="slds-m-top_small slds-m-around_x-small"
+                                variant="brand"
+                                type="submit"
+                                label="Update"
+                            >
+                         </lightning-button>
+                    </footer>
+            </lightning-record-edit-form>
+             </div>
+ 
+           <!-- modal footer start-->
+        
+        </div>
+     </section>
+     <div class="slds-backdrop slds-backdrop_open"></div>
+   </template>
+</template>
