@@ -10,9 +10,38 @@ public class OpportunityController {
                     if(opp.eVisit_Noted_Differentiators__c == null){
                         opp.eVisit_Noted_Differentiators__c.addError('Please select a value for eVisit Noted Differentiators');
                     }
+                    if(opp.StageName == 'Closed Lost' && opp.Loss_Reason__c ==null){
+                        opp.Loss_Reason__c.addError('Please select a value for Loss Reason');
+                    }
                 }  
             }
+            
+            //updating Amount field
+            if(opp.Total_Year_1__c != null){
+                opp.Amount = opp.Total_Year_1__c;
+            }
         }
+    }
+    
+    public static void setOppotunityType(List<Opportunity> newOpportunityList){
+        system.debug('newOpportunityList rt:'+newOpportunityList);
+        for(Opportunity opp : newOpportunityList){
+            String recordTypeDevName = Schema.SObjectType.Opportunity.getRecordTypeInfosById().get(opp.RecordTypeId).getDeveloperName();
+            system.debug('recordTypeDevName rt:'+recordTypeDevName);
+            if(recordTypeDevName =='Cross_Sell' || recordTypeDevName =='New_Sale' || 
+               recordTypeDevName =='Renewal' || recordTypeDevName =='Up_Sell'){
+                   opp.Opportunity_Type__c = 'Commercial';
+               }else{
+                   opp.Opportunity_Type__c = 'Federal';
+               }
+            
+            //updating Amount field
+            if(opp.Total_Year_1__c != null){
+                opp.Amount = opp.Total_Year_1__c;
+            }
+        }
+        
+        
     }
     
     @AuraEnabled(cacheable=true)
@@ -39,7 +68,7 @@ public class OpportunityController {
         }
         return null;
         
-       
+        
     }
     
     @AuraEnabled

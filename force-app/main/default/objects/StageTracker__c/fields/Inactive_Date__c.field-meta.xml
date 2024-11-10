@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactive_Date__c</fullName>
+    <description>The date when this field/object combo stopped being active. Note if this field is null the end date is calculated as NOW()</description>
+    <label>Inactive Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

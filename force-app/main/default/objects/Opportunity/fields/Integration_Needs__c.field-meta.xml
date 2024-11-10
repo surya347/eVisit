@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integration_Needs__c</fullName>
+    <label>Integration Needs</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EHR Scheduling</fullName>
+                <default>false</default>
+                <label>EHR Scheduling</label>
+            </value>
+            <value>
+                <fullName>EHR ADT Feed</fullName>
+                <default>false</default>
+                <label>EHR ADT Feed</label>
+            </value>
+            <value>
+                <fullName>EHR Patient and Encounter Creation</fullName>
+                <default>false</default>
+                <label>EHR Patient and Encounter Creation</label>
+            </value>
+            <value>
+                <fullName>Real Time Insurance Eligibility</fullName>
+                <default>false</default>
+                <label>Real Time Insurance Eligibility</label>
+            </value>
+            <value>
+                <fullName>Provider SSO</fullName>
+                <default>false</default>
+                <label>Provider SSO</label>
+            </value>
+            <value>
+                <fullName>Patient SSO</fullName>
+                <default>false</default>
+                <label>Patient SSO</label>
+            </value>
+            <value>
+                <fullName>APK - Mobile App Integration</fullName>
+                <default>false</default>
+                <label>APK - Mobile App Integration</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

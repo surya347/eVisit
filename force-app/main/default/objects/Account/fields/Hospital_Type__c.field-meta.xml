@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hospital_Type__c</fullName>
+    <label>Hospital Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Health System</fullName>
+                <default>false</default>
+                <label>Health System</label>
+            </value>
+            <value>
+                <fullName>Health System - Academic</fullName>
+                <default>false</default>
+                <label>Health System - Academic</label>
+            </value>
+            <value>
+                <fullName>Childrens Hospital</fullName>
+                <default>false</default>
+                <label>Children&apos;s Hospital</label>
+            </value>
+            <value>
+                <fullName>FQHC</fullName>
+                <default>false</default>
+                <label>Federally Qualified Health Center</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Private Group</fullName>
+                <default>false</default>
+                <label>Private Group</label>
+            </value>
+            <value>
+                <fullName>Critical Access Hospital</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Critical Access Hospital</label>
+            </value>
+            <value>
+                <fullName>Department of Defense Hospital</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Department of Defense Hospital</label>
+            </value>
+            <value>
+                <fullName>Long Term Acute Care Hospital</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Long Term Acute Care Hospital</label>
+            </value>
+            <value>
+                <fullName>Psychiatric Hospital</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Psychiatric Hospital</label>
+            </value>
+            <value>
+                <fullName>Rehabilitation Hospital</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rehabilitation Hospital</label>
+            </value>
+            <value>
+                <fullName>Religious Non-Medical Health Care Institution</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Religious Non-Medical Health Care Institution</label>
+            </value>
+            <value>
+                <fullName>Short Term Acute Care Hospital</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Short Term Acute Care Hospital</label>
+            </value>
+            <value>
+                <fullName>VA Hospital</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>VA Hospital</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Engagement_Date__c</fullName>
+    <description>The last time a contact engaged with your site or a form, document, meetings link, or tracked email. This doesn&apos;t include marketing emails or emails to multiple contacts. Created by CK Ext.221.</description>
+    <label>Last Engagement Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

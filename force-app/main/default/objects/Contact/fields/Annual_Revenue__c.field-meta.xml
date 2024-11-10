@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_Revenue__c</fullName>
+    <description>Annual company revenue. Created by CK Ext.221.</description>
+    <label>Annual Revenue</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>$0 - $50,000</fullName>
+                <default>false</default>
+                <label>$0 - $50,000</label>
+            </value>
+            <value>
+                <fullName>$50,000 - $75,000</fullName>
+                <default>false</default>
+                <label>$50,000 - $75,000</label>
+            </value>
+            <value>
+                <fullName>$75,000 - $100,000</fullName>
+                <default>false</default>
+                <label>$75,000 - $100,000</label>
+            </value>
+            <value>
+                <fullName>$100,000 - $150,000</fullName>
+                <default>false</default>
+                <label>$100,000 - $150,000</label>
+            </value>
+            <value>
+                <fullName>$150,000 - $200,000</fullName>
+                <default>false</default>
+                <label>$150,000 - $200,000</label>
+            </value>
+            <value>
+                <fullName>$200,000+</fullName>
+                <default>false</default>
+                <label>$200,000+</label>
+            </value>
+            <value>
+                <fullName>Less than $10 Million</fullName>
+                <default>false</default>
+                <label>Less than $10 Million</label>
+            </value>
+            <value>
+                <fullName>$10 Million - $49 Million</fullName>
+                <default>false</default>
+                <label>$10 Million - $49 Million</label>
+            </value>
+            <value>
+                <fullName>$50 Million - $249 Million</fullName>
+                <default>false</default>
+                <label>$50 Million - $249 Million</label>
+            </value>
+            <value>
+                <fullName>$250 Million - $999 Million</fullName>
+                <default>false</default>
+                <label>$250 Million - $999 Million</label>
+            </value>
+            <value>
+                <fullName>More than $1 Billion</fullName>
+                <default>false</default>
+                <label>More than $1 Billion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

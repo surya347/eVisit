@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_Field_Formatting</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(ISBLANK(Phone), false, OR(LEN(Phone)&lt;5,NOT( REGEX( Phone, &quot;[0-9.()+ extEXT-]+&quot;))))</errorConditionFormula>
+    <errorMessage>Phone values must be at least 5 characters in length and can only contain numbers, spaces, hyphens, numbers, parenthesis, e, x, t, ., +</errorMessage>
+</ValidationRule>

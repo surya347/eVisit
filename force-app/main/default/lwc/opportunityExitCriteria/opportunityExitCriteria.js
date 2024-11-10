@@ -27,7 +27,7 @@ export default class OpportunityExitCriteria extends LightningElement {
 
     handleChangeStageModal(event) {
         this.stageValue = event.detail.value;
-        console.log('this.stageValue:'+JSON.stringify(this.stageValue))
+        // console.log('this.stageValue:'+JSON.stringify(this.stageValue))
         if (this.stageValue != "" && this.stageValue != "Closed Lost") {
             this.showStageModal = true;
             this.hideRequiredCheckboxField = false;
@@ -38,11 +38,22 @@ export default class OpportunityExitCriteria extends LightningElement {
          else {
             this.showStageModal = false;
         }
+
+        // console.log('this.eVisitDiffrentioatorValue:'+JSON.stringify(this.eVisitDiffrentioatorValue))
+       
+        // input.className = 'slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value';
     }
 
     handleChangediffrentiator(event) {
         this.eVisitDiffrentioatorValue = event.detail.value;
+       
     }
+    renderedCallback(){
+        let input = this.template.querySelector(`[data-id="StageName"]`);
+        input.value='Closed Lost';
+        input.className='slds-hide'
+    }
+
     connectedCallback() {
 
         //console.log('selectedStage:' + JSON.stringify(this.recordData.fields))

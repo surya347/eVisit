@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidationRule_4_SubjectRegulation</fullName>
+    <active>false</active>
+    <description>Validation rule to restrict the subject to the list of values mentioned in the picklist</description>
+    <errorConditionFormula>AND(
+ ISPICKVAL( TaskSubtype, &quot;Call&quot;),
+ Subject != &quot;Meeting&quot;,
+ Subject != &quot;LinkedIn&quot;,
+ Subject != &quot;Email&quot;,
+ Subject != &quot;Call&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Subject</errorDisplayField>
+    <errorMessage>Please type select either Call, Meeting, LinkedIn, Email as Subject for this Task.</errorMessage>
+</ValidationRule>

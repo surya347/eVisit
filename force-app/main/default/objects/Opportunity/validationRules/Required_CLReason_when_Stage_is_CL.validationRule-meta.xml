@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_CLReason_when_Stage_is_CL</fullName>
+    <active>false</active>
+    <description>User must select the closed Lost reason, when they try to change the opportunity stage to closed Lost</description>
+    <errorConditionFormula>AND(
+  OR(
+   ISPICKVAL( StageName, &quot;Closed Lost&quot;),
+   ISPICKVAL( StageName, &quot;Disqualified&quot;)
+  ),
+ISBLANK(TEXT( Loss_Reason__c ))
+)</errorConditionFormula>
+    <errorDisplayField>Loss_Reason__c</errorDisplayField>
+    <errorMessage>Please select Closed Lost reason to proceed further.</errorMessage>
+</ValidationRule>

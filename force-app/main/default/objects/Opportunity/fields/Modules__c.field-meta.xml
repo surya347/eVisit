@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modules__c</fullName>
+    <label>Modules</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Care Navigation</fullName>
+                <default>false</default>
+                <label>Care Navigation</label>
+            </value>
+            <value>
+                <fullName>Portal Integration</fullName>
+                <default>false</default>
+                <label>Portal Integration</label>
+            </value>
+            <value>
+                <fullName>Patient Intake and Registration</fullName>
+                <default>false</default>
+                <label>Patient Intake and Registration</label>
+            </value>
+            <value>
+                <fullName>Self-Scheduling</fullName>
+                <default>false</default>
+                <label>Self-Scheduling</label>
+            </value>
+            <value>
+                <fullName>Appointment Reminders</fullName>
+                <default>false</default>
+                <label>Appointment Reminders</label>
+            </value>
+            <value>
+                <fullName>Payment Collection</fullName>
+                <default>false</default>
+                <label>Payment Collection</label>
+            </value>
+            <value>
+                <fullName>Patient and Clinician Tools (Virtual Visit)</fullName>
+                <default>false</default>
+                <label>Patient and Clinician Tools (Virtual Visit)</label>
+            </value>
+            <value>
+                <fullName>Video or Audio Visit (Virtual Visit)</fullName>
+                <default>false</default>
+                <label>Video or Audio Visit (Virtual Visit)</label>
+            </value>
+            <value>
+                <fullName>Patient Visit Feedback</fullName>
+                <default>false</default>
+                <label>Patient Visit Feedback</label>
+            </value>
+            <value>
+                <fullName>Patient Scheduling</fullName>
+                <default>false</default>
+                <label>Patient Scheduling</label>
+            </value>
+            <value>
+                <fullName>Triage and Patient Routing</fullName>
+                <default>false</default>
+                <label>Triage and Patient Routing</label>
+            </value>
+            <value>
+                <fullName>Patient and Clinician Chat</fullName>
+                <default>false</default>
+                <label>Patient and Clinician Chat</label>
+            </value>
+            <value>
+                <fullName>Patient Information Review</fullName>
+                <default>false</default>
+                <label>Patient Information Review</label>
+            </value>
+            <value>
+                <fullName>Multi-Party Visit</fullName>
+                <default>false</default>
+                <label>Multi-Party Visit</label>
+            </value>
+            <value>
+                <fullName>Insights and Care Coordination</fullName>
+                <default>false</default>
+                <label>Insights and Care Coordination</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

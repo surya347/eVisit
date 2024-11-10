@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Latest_Source__c</fullName>
+    <label>Latest Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Content Syndication</fullName>
+                <default>false</default>
+                <label>Content Syndication</label>
+            </value>
+            <value>
+                <fullName>Direct Traffic</fullName>
+                <default>false</default>
+                <label>Direct Traffic</label>
+            </value>
+            <value>
+                <fullName>Email Marketing</fullName>
+                <default>false</default>
+                <label>Email Marketing</label>
+            </value>
+            <value>
+                <fullName>Inbound Call</fullName>
+                <default>false</default>
+                <label>Inbound Call</label>
+            </value>
+            <value>
+                <fullName>MQL Scoring</fullName>
+                <default>false</default>
+                <label>MQL Scoring</label>
+            </value>
+            <value>
+                <fullName>Offline Sources</fullName>
+                <default>false</default>
+                <label>Offline Sources</label>
+            </value>
+            <value>
+                <fullName>Organic Search</fullName>
+                <default>false</default>
+                <label>Organic Search</label>
+            </value>
+            <value>
+                <fullName>Organic Social</fullName>
+                <default>false</default>
+                <label>Organic Social</label>
+            </value>
+            <value>
+                <fullName>Other Campaigns</fullName>
+                <default>false</default>
+                <label>Other Campaigns</label>
+            </value>
+            <value>
+                <fullName>Outbound Prospecting</fullName>
+                <default>false</default>
+                <label>Outbound Prospecting</label>
+            </value>
+            <value>
+                <fullName>Paid Search</fullName>
+                <default>false</default>
+                <label>Paid Search</label>
+            </value>
+            <value>
+                <fullName>Paid Social</fullName>
+                <default>false</default>
+                <label>Paid Social</label>
+            </value>
+            <value>
+                <fullName>Referrals</fullName>
+                <default>false</default>
+                <label>Referrals</label>
+            </value>
+            <value>
+                <fullName>Tradeshow/Conference</fullName>
+                <default>false</default>
+                <label>Tradeshow/Conference</label>
+            </value>
+            <value>
+                <fullName>ABM</fullName>
+                <default>false</default>
+                <label>ABM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

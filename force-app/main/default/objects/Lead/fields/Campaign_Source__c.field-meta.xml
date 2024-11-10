@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Source__c</fullName>
+    <description>The source of the campaign that lead to this lead.</description>
+    <label>Campaign Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AHA Rural 2019</fullName>
+                <default>false</default>
+                <label>AHA Rural 2019</label>
+            </value>
+            <value>
+                <fullName>ATA 2019</fullName>
+                <default>false</default>
+                <label>ATA 2019</label>
+            </value>
+            <value>
+                <fullName>Innovation Exchange 2019</fullName>
+                <default>false</default>
+                <label>Innovation Exchange 2019</label>
+            </value>
+            <value>
+                <fullName>ABM Advertising</fullName>
+                <default>false</default>
+                <label>ABM Advertising</label>
+            </value>
+            <value>
+                <fullName>CXO Exchange 2019</fullName>
+                <default>false</default>
+                <label>CXO Exchange 2019</label>
+            </value>
+            <value>
+                <fullName>NTS 2020</fullName>
+                <default>false</default>
+                <label>NTS 2020</label>
+            </value>
+            <value>
+                <fullName>ATA2021</fullName>
+                <default>false</default>
+                <label>ATA2021</label>
+            </value>
+            <value>
+                <fullName>HASummit 2020</fullName>
+                <default>false</default>
+                <label>HASummit 2020</label>
+            </value>
+            <value>
+                <fullName>Beckers2021</fullName>
+                <default>false</default>
+                <label>Beckers2021</label>
+            </value>
+            <value>
+                <fullName>BRI Events2021</fullName>
+                <default>false</default>
+                <label>BRI Events2021</label>
+            </value>
+            <value>
+                <fullName>HIMSS 2021</fullName>
+                <default>false</default>
+                <label>HIMSS 2021</label>
+            </value>
+            <value>
+                <fullName>AmWell 2021 Competitive</fullName>
+                <default>false</default>
+                <label>AmWell 2021 Competitive</label>
+            </value>
+            <value>
+                <fullName>HLTH 2021</fullName>
+                <default>false</default>
+                <label>HLTH 2021</label>
+            </value>
+            <value>
+                <fullName>HIMSS 2022</fullName>
+                <default>false</default>
+                <label>HIMSS 2022</label>
+            </value>
+            <value>
+                <fullName>ATA2022</fullName>
+                <default>false</default>
+                <label>ATA2022</label>
+            </value>
+            <value>
+                <fullName>Beckers2022</fullName>
+                <default>false</default>
+                <label>Beckers2022</label>
+            </value>
+            <value>
+                <fullName>Cold Email Drip: May 2019</fullName>
+                <default>false</default>
+                <label>Cold Email Drip: May 2019</label>
+            </value>
+            <value>
+                <fullName>Cold Email Drip: Mid-Market</fullName>
+                <default>false</default>
+                <label>Cold Email Drip: Mid-Market</label>
+            </value>
+            <value>
+                <fullName>Direct Traffic</fullName>
+                <default>false</default>
+                <label>Direct Traffic</label>
+            </value>
+            <value>
+                <fullName>HealthLeaders Custom Research Brief</fullName>
+                <default>false</default>
+                <label>HealthLeaders Custom Research Brief</label>
+            </value>
+            <value>
+                <fullName>HealthLeaders Newsletter Takeover</fullName>
+                <default>false</default>
+                <label>HealthLeaders Newsletter Takeover</label>
+            </value>
+            <value>
+                <fullName>Organic</fullName>
+                <default>false</default>
+                <label>Organic</label>
+            </value>
+            <value>
+                <fullName>Paid Social</fullName>
+                <default>false</default>
+                <label>Paid Social</label>
+            </value>
+            <value>
+                <fullName>PPC</fullName>
+                <default>false</default>
+                <label>PPC</label>
+            </value>
+            <value>
+                <fullName>Prospecting Email: Problems Q120</fullName>
+                <default>false</default>
+                <label>Prospecting Email: Problems Q120</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+                <label>Social Media</label>
+            </value>
+            <value>
+                <fullName>Tier 2 Enterprise Email Series Q319</fullName>
+                <default>false</default>
+                <label>Tier 2 Enterprise Email Series Q319</label>
+            </value>
+            <value>
+                <fullName>Unengaged Email Series</fullName>
+                <default>false</default>
+                <label>Unengaged Email Series</label>
+            </value>
+            <value>
+                <fullName>Marketing 2019</fullName>
+                <default>false</default>
+                <label>Marketing 2019</label>
+            </value>
+            <value>
+                <fullName>HIMSS2021</fullName>
+                <default>false</default>
+                <label>HIMSS2021</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

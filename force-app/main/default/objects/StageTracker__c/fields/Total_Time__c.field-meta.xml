@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Time__c</fullName>
+    <description>Calculate the total time in current stage/status. Uses cumulated days which is calculated by the system and if the end date is null this means the field is still the selected value so the time is on going. If the end date is set this means the field is no longer selected and the total time has been capped</description>
+    <externalId>false</externalId>
+    <formula>Cumulated_Days__c + If(Isblank(Inactive_Date__c), Now() - Last_Active_Date__c, Inactive_Date__c - Last_Active_Date__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Total time in Status/Stage</inlineHelpText>
+    <label>Total Days</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

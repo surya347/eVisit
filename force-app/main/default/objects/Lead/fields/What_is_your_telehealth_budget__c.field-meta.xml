@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_is_your_telehealth_budget__c</fullName>
+    <description>Budget for Telehealth. Created by CK Ext.221.</description>
+    <label>What is your telehealth budget?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>$1M+</fullName>
+                <default>false</default>
+                <label>$1M+</label>
+            </value>
+            <value>
+                <fullName>$500k</fullName>
+                <default>false</default>
+                <label>$500k</label>
+            </value>
+            <value>
+                <fullName>$300k - $400K</fullName>
+                <default>false</default>
+                <label>$300k - $400K</label>
+            </value>
+            <value>
+                <fullName>$200k - $300k</fullName>
+                <default>false</default>
+                <label>$200k - $300k</label>
+            </value>
+            <value>
+                <fullName>$100k - $200k</fullName>
+                <default>false</default>
+                <label>$100k - $200k</label>
+            </value>
+            <value>
+                <fullName>Below $100k</fullName>
+                <default>false</default>
+                <label>Below $100k</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

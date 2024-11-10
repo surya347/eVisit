@@ -19,8 +19,9 @@ public class OpportunityControllerTest {
      @isTest static void OpportunityControllerTrigger(){
         List<Account> accList = [Select id,Name from Account LIMIT 1];
         List<Opportunity> newoppLIst = [Select id,Name,Amount,stageName,AccountId,LeadSource,ARR__c,Use_Case__c,Implementation_Fee__c from Opportunity Where Name = 'Test'];
-        newoppLIst[0].stageName = 'Closed Won';
-       
+        newoppLIst[0].stageName = 'Closed Lost';
+        newoppLIst[0].Loss_Reason__c = 'Competitor';
+         
         Test.startTest();
         List<Database.SaveResult> result = Database.update(newoppLIst, false);
         Test.stopTest();

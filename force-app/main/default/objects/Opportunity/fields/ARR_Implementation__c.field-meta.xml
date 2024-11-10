@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARR_Implementation__c</fullName>
+    <description>Implementing ARR. Created by CK Ext. 221</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ARR + Implementation Fee</inlineHelpText>
+    <label>ARR + Implementation</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

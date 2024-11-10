@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Category__c</fullName>
+    <label>Call Category</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Navigation Call</fullName>
+                <default>false</default>
+                <label>Navigation Call</label>
+            </value>
+            <value>
+                <fullName>Scheduling Call</fullName>
+                <default>false</default>
+                <label>Scheduling Call</label>
+            </value>
+            <value>
+                <fullName>Direct Call</fullName>
+                <default>false</default>
+                <label>Direct Call</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sam_s_Territory</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>texcellency__DefHC_HospitalID__c</columns>
+    <columns>texcellency__DefHC_State__c</columns>
+    <columns>texcellency__DefHC_NetPatientRev__c</columns>
+    <columns>texcellency__DefHC_EMR_Vendor_Inpatient__c</columns>
+    <columns>texcellency__DefHC_FirmType__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>texcellency__DefHC_State__c</field>
+        <operation>equals</operation>
+        <value>CT,IL,IN,KY,ME,MI,NJ,NY,OH,PA,RI,WV</value>
+    </filters>
+    <label>Sam&apos;s Territory</label>
+</ListView>

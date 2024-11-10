@@ -1,0 +1,2649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard</fullName>
+    <active>true</active>
+    <label>Standard</label>
+    <picklistValues>
+        <picklist>Annual_Revenue__c</picklist>
+        <values>
+            <fullName>%240 - %2450%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2410 Million - %2449 Million</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%24100%2C000 - %24150%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%24150%2C000 - %24200%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%24200%2C000%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%24250 Million - %24999 Million</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2450 Million - %24249 Million</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2450%2C000 - %2475%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2475%2C000 - %24100%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Less than %2410 Million</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More than %241 Billion</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Campaign_Source__c</picklist>
+        <values>
+            <fullName>ABM Advertising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AHA Rural 2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>API Name</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATA 2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATA2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATA2022</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AmWell 2021 Competitive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRI Events2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beckers2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beckers2022</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CXO Exchange 2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Email Drip%3A May 2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Email Drip%3A Mid-Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Traffic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HASummit 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HIMSS 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HIMSS 2022</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HLTH 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HealthLeaders Custom Research Brief</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovation Exchange 2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing 2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NTS 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecting Email%3A Problems Q120</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 2 Enterprise Email Series Q319</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unengaged Email Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>organic</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Disqualified_Reason__c</picklist>
+        <values>
+            <fullName>Chose a Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not a Decision Maker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not a Hospital%2FHealthcare System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Feature Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reimbursement Concerns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to Reseller - MEP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solo-provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timing 13%2B Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unresponsive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Latest_Source__c</picklist>
+        <values>
+            <fullName>ABM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Content Syndication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Traffic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MQL Scoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offline Sources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Campaigns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Prospecting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referrals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tradeshow%2FConference</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Inbound Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Prospecting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tradeshow%2FConference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Status__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disqualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Contact - Converted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Conversation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Qualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Opportunity - Converted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Opportunity - Converted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nurture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working - Attempting Follow Up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nurture_Details_Lost_reason__c</picklist>
+        <values>
+            <fullName>Contract Concerns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interested in Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Just Researching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-responsive%2FWent Dark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Stage__c</picklist>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stage 0</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Original_Source__c</picklist>
+        <values>
+            <fullName>Direct Traffic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offline Sources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Campaigns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Social</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating__c</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Time_Zone__c</picklist>
+        <values>
+            <fullName>UTC %2B00%3A00 Africa Abidjan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Africa Accra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Africa Bamako</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Africa Banjul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Africa Bissau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Africa Conakry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Africa Dakar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Africa Freetown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Africa Lome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Africa Monrovia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Africa Nouakchott</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Africa Ouagadougou</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Africa Timbuktu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 America Danmarkshavn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 America Scoresbysund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Atlantic Azores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Atlantic Reykjavik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Atlantic St Helena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B00%3A00 Europe Iceland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Algiers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Bangui</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Brazzaville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Casablanca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Douala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa El Aaiun</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Kinshasa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Lagos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Libreville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Luanda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Malabo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Ndjamena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Niamey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Porto-Novo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Sao Tome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Africa Tunis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Atlantic Canary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Atlantic Faeroe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Atlantic Faroe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Atlantic Madeira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Europe Belfast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Europe Dublin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Europe Eire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Europe Guernsey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Europe Isle of Man</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Europe Jersey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Europe Lisbon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Europe London</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B01%3A00 Europe Portugal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Blantyre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Bujumbura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Cairo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Ceuta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Egypt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Gaborone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Harare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Johannesburg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Khartoum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Kigali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Libya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Lubumbashi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Lusaka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Maputo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Maseru</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Mbabane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Tripoli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Africa Windhoek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Antarctica Troll</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Arctic Longyearbyen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Atlantic Jan Mayen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Amsterdam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Andorra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Belgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Berlin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Bratislava</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Brussels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Budapest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Busingen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Copenhagen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Gibraltar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Kaliningrad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Ljubljana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Luxembourg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Madrid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Malta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Monaco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Oslo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Paris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Podgorica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Poland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Prague</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Rome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe San Marino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Sarajevo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Skopje</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Stockholm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Tirane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Vaduz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Vatican</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Vienna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Warsaw</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Zagreb</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B02%3A00 Europe Zurich</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Africa Addis Ababa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Africa Asmara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Africa Asmera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Africa Dar es Salaam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Africa Djibouti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Africa Juba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Africa Kampala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Africa Mogadishu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Africa Nairobi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Antarctica Syowa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Aden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Amman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Baghdad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Bahrain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Beirut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Damascus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Famagusta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Gaza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Hebron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Israel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Istanbul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Jerusalem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Kuwait</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Nicosia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Qatar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Riyadh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Tel Aviv</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Asia Turkey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Athens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Bucharest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Chisinau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Helsinki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Istanbul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Kiev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Kirov</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Mariehamn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Minsk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Moscow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Nicosia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Riga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Simferopol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Sofia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Tallinn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Tiraspol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Uzhgorod</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Vilnius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Europe Zaporozhye</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Indian Antananarivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Indian Comoro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B03%3A00 Indian Mayotte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A00 Asia Baku</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A00 Asia Dubai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A00 Asia Muscat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A00 Asia Tbilisi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A00 Asia Yerevan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A00 Europe Astrakhan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A00 Europe Samara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A00 Europe Saratov</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A00 Europe Ulyanovsk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A00 Europe Volgograd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A00 Indian Mahe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A00 Indian Mauritius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A00 Indian Reunion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A30 Asia Iran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A30 Asia Kabul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B04%3A30 Asia Tehran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A00 Antarctica Mawson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A00 Asia Aqtau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A00 Asia Aqtobe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A00 Asia Ashgabat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A00 Asia Ashkhabad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A00 Asia Atyrau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A00 Asia Dushanbe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A00 Asia Karachi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A00 Asia Oral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A00 Asia Samarkand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A00 Asia Tashkent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A00 Asia Yekaterinburg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A00 Indian Kerguelen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A00 Indian Maldives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A30 Asia Calcutta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A30 Asia Colombo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A30 Asia Kolkata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A45 Asia Kathmandu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B05%3A45 Asia Katmandu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A00 Antarctica Vostok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A00 Asia Almaty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A00 Asia Bishkek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A00 Asia Dacca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A00 Asia Dhaka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A00 Asia Kashgar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A00 Asia Omsk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A00 Asia Qyzylorda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A00 Asia Thimbu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A00 Asia Thimphu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A00 Asia Urumqi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A00 Indian Chagos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A30 Asia Rangoon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A30 Asia Yangon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B06%3A30 Indian Cocos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Antarctica Davis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Asia Bangkok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Asia Barnaul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Asia Ho Chi Minh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Asia Hovd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Asia Jakarta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Asia Krasnoyarsk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Asia Novokuznetsk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Asia Novosibirsk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Asia Phnom Penh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Asia Pontianak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Asia Saigon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Asia Tomsk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Asia Vientiane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B07%3A00 Indian Christmas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Antarctica Casey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Brunei</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Choibalsan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Chongqing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Chungking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Harbin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Irkutsk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Kuala Lumpur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Kuching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Macao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Macau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Makassar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Manila</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Shanghai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Taipei</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Ujung Pandang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Ulaanbaatar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Asia Ulan Bator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Australia Perth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A00 Australia West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B08%3A45 Australia Eucla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A00 Asia Chita</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A00 Asia Dili</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A00 Asia Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A00 Asia Jayapura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A00 Asia Khandyga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A00 Asia Pyongyang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A00 Asia Seoul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A00 Asia Tokyo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A00 Asia Yakutsk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A00 Pacific Palau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A30 Australia Adelaide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A30 Australia Broken Hill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A30 Australia Darwin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A30 Australia North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A30 Australia South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B09%3A30 Australia Yancowinna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Antarctica DumontDUrville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Asia Ust-Nera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Asia Vladivostok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Australia ACT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Australia Brisbane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Australia Canberra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Australia Currie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Australia Hobart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Australia Lindeman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Australia Melbourne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Australia NSW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Australia Queensland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Australia Sydney</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Australia Tasmania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Australia Victoria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Pacific Chuuk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Pacific Guam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Pacific Port Moresby</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Pacific Saipan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Pacific Truk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A00 Pacific Yap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A30 Australia LHI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B10%3A30 Australia Lord Howe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B11%3A00 Antarctica Macquarie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B11%3A00 Asia Magadan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B11%3A00 Asia Sakhalin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B11%3A00 Asia Srednekolymsk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B11%3A00 Pacific Bougainville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B11%3A00 Pacific Efate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B11%3A00 Pacific Guadalcanal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B11%3A00 Pacific Kosrae</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B11%3A00 Pacific Norfolk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B11%3A00 Pacific Noumea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B11%3A00 Pacific Pohnpei</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B11%3A00 Pacific Ponape</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B12%3A00 Antarctica McMurdo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B12%3A00 Antarctica South Pole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B12%3A00 Asia Anadyr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B12%3A00 Asia Kamchatka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B12%3A00 Pacific Auckland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B12%3A00 Pacific Fiji</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B12%3A00 Pacific Funafuti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B12%3A00 Pacific Kwajalein</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B12%3A00 Pacific Majuro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B12%3A00 Pacific Nauru</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B12%3A00 Pacific Tarawa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B12%3A00 Pacific Wake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B12%3A00 Pacific Wallis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B12%3A45 Pacific Chatham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B13%3A00 Pacific Apia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B13%3A00 Pacific Enderbury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B13%3A00 Pacific Fakaofo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B13%3A00 Pacific Tongatapu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC %2B14%3A00 Pacific Kiritimati</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -01%3A00 Atlantic Cape Verde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -02%3A00 America Godthab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -02%3A00 America Miquelon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -02%3A00 America Noronha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -02%3A00 Atlantic South Georgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -02%3A00 Brazil DeNoronha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -02%3A30 America St Johns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -02%3A30 Canada Newfoundland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Araguaina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Argentina %28Buenos Aires%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Argentina %28Catamarca%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Argentina %28ComodRivadavia%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Argentina %28Cordoba%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Argentina %28Jujuy%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Argentina %28La Rioja%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Argentina %28Mendoza%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Argentina %28Rio Gallegos%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Argentina %28Salta%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Argentina %28San Juan%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Argentina %28San Luis%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Argentina %28Tucuman%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Argentina %28Ushuaia%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Bahia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Belem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Buenos Aires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Catamarca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Cayenne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Cordoba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Fortaleza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Glace Bay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Goose Bay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Halifax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Jujuy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Maceio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Mendoza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Moncton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Montevideo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Paramaribo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Punta Arenas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Recife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Rosario</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Santarem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Sao Paulo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 America Thule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 Antarctica Palmer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 Antarctica Rothera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 Atlantic Bermuda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 Atlantic Stanley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 Brazil East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -03%3A00 Canada Atlantic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Anguilla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Antigua</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Aruba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Asuncion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Barbados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Blanc-Sablon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Boa Vista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Campo Grande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Caracas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Cuba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Cuiaba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Curacao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Detroit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Dominica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Fort Wayne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Grand Turk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Grenada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Guadeloupe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Guyana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Havana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Indiana %28Indianapolis%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Indiana %28Marengo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Indiana %28Petersburg%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Indiana %28Vevay%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Indiana %28Vincennes%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Indiana %28Winamac%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Indianapolis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Iqaluit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Kentucky %28Louisville%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Kentucky %28Monticello%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Kralendijk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America La Paz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Louisville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Lower Princes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Manaus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Marigot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Martinique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Montreal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Montserrat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Nassau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America New York</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Nipigon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Pangnirtung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Port of Spain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Port-au-Prince</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Porto Velho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Puerto Rico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Santiago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Santo Domingo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America St Barthelemy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America St Kitts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America St Lucia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America St Thomas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America St Vincent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Thunder Bay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Toronto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Tortola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 America Virgin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 Brazil West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 Canada Eastern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 Chile Continental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 US East-Indiana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 US Eastern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -04%3A00 US Michigan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Atikokan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Bahia Banderas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Bogota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Cancun</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Cayman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Chicago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Coral Harbour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Eirunepe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Guayaquil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Indiana %28Knox%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Indiana %28Tell City%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Jamaica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Knox IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Lima</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Matamoros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Menominee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Merida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Mexico City</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Monterrey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America North Dakota %28Beulah%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America North Dakota %28Center%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America North Dakota %28New Salem%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Panama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Porto Acre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Rainy River</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Rankin Inlet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Resolute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Rio Branco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 America Winnipeg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 Brazil Acre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 Canada Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 Mexico General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 US Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -05%3A00 US Indiana-Starke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Belize</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Boise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Cambridge Bay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Chihuahua</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Costa Rica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Denver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Edmonton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America El Salvador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Guatemala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Inuvik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Managua</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Mazatlan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Navajo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Ojinaga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Regina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Shiprock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Swift Current</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Tegucigalpa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 America Yellowknife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 Canada Mountain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 Canada Saskatchewan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 Chile EasterIsland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 Mexico BajaSur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 Pacific Easter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 Pacific Galapagos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -06%3A00 US Mountain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 America Creston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 America Dawson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 America Dawson Creek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 America Ensenada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 America Fort Nelson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 America Hermosillo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 America Los Angeles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 America Phoenix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 America Santa Isabel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 America Tijuana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 America Vancouver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 America Whitehorse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 Canada Pacific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 Canada Yukon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 Mexico BajaNorte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 US Arizona</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 US Pacific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -07%3A00 US Pacific-New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -08%3A00 America Anchorage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -08%3A00 America Juneau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -08%3A00 America Metlakatla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -08%3A00 America Nome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -08%3A00 America Sitka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -08%3A00 America Yakutat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -08%3A00 Pacific Pitcairn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -08%3A00 US Alaska</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -09%3A00 America Adak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -09%3A00 America Atka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -09%3A00 Pacific Gambier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -09%3A00 US Aleutian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -09%3A30 Pacific Marquesas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -10%3A00 Pacific Honolulu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -10%3A00 Pacific Johnston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -10%3A00 Pacific Rarotonga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -10%3A00 Pacific Tahiti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -10%3A00 US Hawaii</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -11%3A00 Pacific Midway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -11%3A00 Pacific Niue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -11%3A00 Pacific Pago Pago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -11%3A00 Pacific Samoa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTC -11%3A00 US Samoa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>What_is_your_telehealth_budget__c</picklist>
+        <values>
+            <fullName>%24100k - %24200k</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%241M%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%24200k - %24300k</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%24300k - %24400K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%24500k</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Below %24100k</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard</fullName>
+    <active>true</active>
+    <label>Standard</label>
+    <picklistValues>
+        <picklist>Activity_Outcome__c</picklist>
+        <values>
+            <fullName>Call%3A Busy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Left Voicemail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting%3A Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Number</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Category__c</picklist>
+        <values>
+            <fullName>Direct Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Navigation Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduling Call</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Meeting_Status__c</picklist>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rescheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Meeting_Type__c</picklist>
+        <values>
+            <fullName>Default Personal Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discovery Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualification Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scoping Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eVisit Product Demo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn Message</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

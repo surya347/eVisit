@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead</fullName>
+    <active>true</active>
+    <description>Lead Status Tracker</description>
+    <label>Lead</label>
+</RecordType>

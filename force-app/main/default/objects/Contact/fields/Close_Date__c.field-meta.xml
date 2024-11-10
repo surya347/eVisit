@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_Date__c</fullName>
+    <description>The date that a contact became a customer. This property is set automatically by HubSpot when a deal or opportunity is marked as closed-won. It can also be set manually or programmatically. Created by CK Ext.221.</description>
+    <label>Close Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Date</type>
+</CustomField>

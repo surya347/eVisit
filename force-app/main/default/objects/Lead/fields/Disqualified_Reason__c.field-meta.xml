@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disqualified_Reason__c</fullName>
+    <label>Disqualified Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MEP</fullName>
+                <default>false</default>
+                <label>Sent to Reseller - MEP</label>
+            </value>
+            <value>
+                <fullName>Partner Inquiry</fullName>
+                <default>false</default>
+                <label>Partner Inquiry</label>
+            </value>
+            <value>
+                <fullName>Not a Hospital/Healthcare System</fullName>
+                <default>false</default>
+                <label>Not a Hospital/Healthcare System</label>
+            </value>
+            <value>
+                <fullName>International</fullName>
+                <default>false</default>
+                <label>International</label>
+            </value>
+            <value>
+                <fullName>Patient</fullName>
+                <default>false</default>
+                <label>Patient</label>
+            </value>
+            <value>
+                <fullName>Student</fullName>
+                <default>false</default>
+                <label>Student</label>
+            </value>
+            <value>
+                <fullName>No Project</fullName>
+                <default>false</default>
+                <label>No Project</label>
+            </value>
+            <value>
+                <fullName>Non-responsive</fullName>
+                <default>false</default>
+                <label>Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Direct Competitor</fullName>
+                <default>false</default>
+                <label>Direct Competitor</label>
+            </value>
+            <value>
+                <fullName>Chose a Competitor</fullName>
+                <default>false</default>
+                <label>Chose a Competitor</label>
+            </value>
+            <value>
+                <fullName>Reimbursement Concerns</fullName>
+                <default>false</default>
+                <label>Reimbursement Concerns</label>
+            </value>
+            <value>
+                <fullName>Product Feature Missing</fullName>
+                <default>false</default>
+                <label>Product Feature Missing</label>
+            </value>
+            <value>
+                <fullName>Do Not Contact</fullName>
+                <default>false</default>
+                <label>Do Not Contact</label>
+            </value>
+            <value>
+                <fullName>Bad Data</fullName>
+                <default>false</default>
+                <label>Bad Data</label>
+            </value>
+            <value>
+                <fullName>Not a Decision Maker</fullName>
+                <default>false</default>
+                <label>Not a Decision Maker</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Solo-provider</fullName>
+                <default>false</default>
+                <label>Solo-provider</label>
+            </value>
+            <value>
+                <fullName>Timing 13+ Months</fullName>
+                <default>false</default>
+                <label>Timing 13+ Months</label>
+            </value>
+            <value>
+                <fullName>University Inquiry</fullName>
+                <default>false</default>
+                <label>University Inquiry</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed-Not Converted</controllingFieldValue>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>MEP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed-Not Converted</controllingFieldValue>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Partner Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed-Not Converted</controllingFieldValue>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Not a Hospital/Healthcare System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed-Not Converted</controllingFieldValue>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>International</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed-Not Converted</controllingFieldValue>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Student</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed-Not Converted</controllingFieldValue>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>No Project</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed-Not Converted</controllingFieldValue>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Non-responsive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed-Not Converted</controllingFieldValue>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Direct Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed-Not Converted</controllingFieldValue>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Not a Decision Maker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed-Not Converted</controllingFieldValue>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed-Not Converted</controllingFieldValue>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Solo-provider</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

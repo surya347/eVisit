@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actively_Worked__c</fullName>
+    <description>Field on the Account to show if they have had activity in the last 45 days.</description>
+    <formula>IF( TODAY () - LastActivityDate &lt;= 45, true,false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Actively Worked</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

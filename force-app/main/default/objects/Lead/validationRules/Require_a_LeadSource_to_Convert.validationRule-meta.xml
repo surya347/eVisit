@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_a_LeadSource_to_Convert</fullName>
+    <active>true</active>
+    <description>Requires a LeadSource to convert the lead</description>
+    <errorConditionFormula>AND (
+ IsConverted,
+ IsBlank(TEXT(LeadSource)),
+ NOT( 
+     OR(
+       $Profile.Name = &quot;System Administrator&quot;,
+       $Profile.Name = &quot;Integration User&quot;
+     )
+ )
+)</errorConditionFormula>
+    <errorDisplayField>LeadSource</errorDisplayField>
+    <errorMessage>Please include a LeadSource to convert this Lead</errorMessage>
+</ValidationRule>

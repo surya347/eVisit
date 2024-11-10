@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_Account_Id__c</fullName>
+    <description>Holds the Id of the record migrated from Hubspot.</description>
+    <externalId>true</externalId>
+    <label>External Account Id</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>true</unique>
+</CustomField>

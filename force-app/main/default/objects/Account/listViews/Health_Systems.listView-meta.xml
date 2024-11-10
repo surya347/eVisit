@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Health_Systems</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>Num_of_Affiliated_Physicians__c</columns>
+    <columns>Number_of_Visits__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Actively_Worked__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Standard</value>
+    </filters>
+    <filters>
+        <field>Hospital_Type__c</field>
+        <operation>contains</operation>
+        <value>Federally Qualified Health Center</value>
+    </filters>
+    <label>FQHC List</label>
+</ListView>

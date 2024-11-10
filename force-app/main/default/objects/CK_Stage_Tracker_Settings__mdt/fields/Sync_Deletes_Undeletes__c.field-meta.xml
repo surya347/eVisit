@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sync_Deletes_Undeletes__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Checkbox to indicate this object is syncing it&apos;s deletes and undeletes with the related stage tracker object</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Unchecking this field could leave floating stage tracker records. It is recommended to always leave this on</inlineHelpText>
+    <label>Sync Deletes/Undeletes</label>
+    <type>Checkbox</type>
+</CustomField>

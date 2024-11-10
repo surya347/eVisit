@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Web_Lead__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This will be checked if a contact submits a consult request</description>
+    <inlineHelpText>This will be checked if a contact submits a consult request</inlineHelpText>
+    <label>Web Lead</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

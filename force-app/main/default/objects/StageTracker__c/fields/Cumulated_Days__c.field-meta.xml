@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cumulated_Days__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>Number field used to store the days cumulated for this field/object combo. This field is needed for when a stage/status field get switched forward and then backwards to the same stage. This field keeps the previous total time and adds it into the formula for total time in stage</description>
+    <externalId>false</externalId>
+    <inlineHelpText>In Days</inlineHelpText>
+    <label>Cumulated Days</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

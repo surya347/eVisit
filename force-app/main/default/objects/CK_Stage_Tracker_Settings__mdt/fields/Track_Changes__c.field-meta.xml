@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Track_Changes__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Checkbox to indicate the object has it&apos;s status/stage being tracked</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Track Changes</label>
+    <type>Checkbox</type>
+</CustomField>

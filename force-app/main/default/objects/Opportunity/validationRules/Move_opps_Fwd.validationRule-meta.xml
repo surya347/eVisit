@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Move_opps_Fwd</fullName>
+    <active>false</active>
+    <description>prevents a user from moving an opportunity backwards in the pipeline</description>
+    <errorConditionFormula>Case( StageName,
+&quot;Discovery and Qualification&quot;, 1,
+&quot;Engage and Assess&quot;, 2,
+&quot;Proposal and Negotiation&quot;, 3,
+&quot;Contracting &amp; Closure&quot;, 4,
+&quot;Closed Won&quot;, 5,
+&quot;Closed Lost&quot;, 6,0) 
+&lt; Case(PRIORVALUE(StageName),
+&quot;Discovery and Qualification&quot;, 1,
+&quot;Engage and Assess&quot;, 2,
+&quot;Proposal and Negotiation&quot;, 3,
+&quot;Contracting &amp; Closure&quot;, 4,
+&quot;Closed Won&quot;, 5,
+&quot;Closed Lost&quot;, 6,0)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Error: You cannot move an opportunity backwards in the pipeline. Please leave this opportunity in the same stage and make note of the reason the opportunity has stalled, or mark Closed-Lost if more appropriate.</errorMessage>
+</ValidationRule>

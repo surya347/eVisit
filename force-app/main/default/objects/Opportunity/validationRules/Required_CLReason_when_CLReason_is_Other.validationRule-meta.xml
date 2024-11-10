@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_CLReason_when_CLReason_is_Other</fullName>
+    <active>false</active>
+    <description>If the user select &apos;others&apos; as closed lost reason, then the user must enter the closed lost reason in the text field.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( StageName, &quot;Closed Lost&quot;),
+ISPICKVAL( Loss_Reason__c , &quot;Other&quot;),
+ISBLANK( Closed_Lost_ReasonTF__c)
+)</errorConditionFormula>
+    <errorDisplayField>Closed_Lost_ReasonTF__c</errorDisplayField>
+    <errorMessage>Please enter the ‘Other’ reason why this Opportunity was lost</errorMessage>
+</ValidationRule>

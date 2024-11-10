@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Required</fullName>
+    <active>true</active>
+    <description>Lead is required for a lead Record Type</description>
+    <errorConditionFormula>AND(
+  RecordType.DeveloperName = &apos;Lead&apos;,
+  ISBLANK(Lead__c)
+)</errorConditionFormula>
+    <errorDisplayField>Lead__c</errorDisplayField>
+    <errorMessage>Lead is Required to track lead status changes</errorMessage>
+</ValidationRule>

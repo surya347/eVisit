@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segment__c</fullName>
+    <label>Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Health System</fullName>
+                <default>false</default>
+                <label>Health System</label>
+            </value>
+            <value>
+                <fullName>FQHC</fullName>
+                <default>false</default>
+                <label>FQHC</label>
+            </value>
+            <value>
+                <fullName>Children&apos;s Hospital</fullName>
+                <default>false</default>
+                <label>Children&apos;s Hospital</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

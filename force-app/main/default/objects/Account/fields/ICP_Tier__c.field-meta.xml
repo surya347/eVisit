@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ICP_Tier__c</fullName>
+    <description>ICP tier text field</description>
+    <label>ICP Tier</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+                <label>Tier 1</label>
+            </value>
+            <value>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+                <label>Tier 2</label>
+            </value>
+            <value>
+                <fullName>Tier 3</fullName>
+                <default>false</default>
+                <label>Tier 3</label>
+            </value>
+            <value>
+                <fullName>Tier 4</fullName>
+                <default>false</default>
+                <label>Tier 4</label>
+            </value>
+            <value>
+                <fullName>Exploratory</fullName>
+                <default>false</default>
+                <label>Exploratory</label>
+            </value>
+            <value>
+                <fullName>Outside-ICP</fullName>
+                <default>false</default>
+                <label>Outside-ICP</label>
+            </value>
+            <value>
+                <fullName>FALSE</fullName>
+                <default>false</default>
+                <label>FALSE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

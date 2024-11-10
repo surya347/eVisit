@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_DisqualiedReasonForDisqualified</fullName>
+    <active>false</active>
+    <description>Users must select a Disqualified reason, when the user change the lead status to &apos;Disqualified&apos;</description>
+    <errorConditionFormula>AND(
+ OR( 
+    ISPICKVAL( Status , &quot;Disqualified&quot;),
+    ISPICKVAL( Status , &quot;Dead&quot;)
+    ),
+ ISBLANK(TEXT( Disqualified_Reason__c  )),
+ NOT( 
+     OR(
+       $Profile.Name = &quot;System Administrator&quot;,
+       $Profile.Name = &quot;Integration User&quot;
+     )
+ )
+)</errorConditionFormula>
+    <errorDisplayField>Disqualified_Reason__c</errorDisplayField>
+    <errorMessage>Please select Disqualified reason to proceed further.</errorMessage>
+</ValidationRule>

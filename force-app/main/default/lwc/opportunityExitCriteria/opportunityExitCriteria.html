@@ -53,15 +53,19 @@
                             onchange={handleChangeStageModal} required></lightning-combobox>
                         
                         <template if:true={showStageModal}>
-                            <lightning-input-field field-name="eVisit_Noted_Differentiators__c" >
+                            <lightning-input-field field-name="eVisit_Noted_Differentiators__c" required>
                             </lightning-input-field>
+                            <template if:true={hideRequiredCheckboxField}>
+                                <lightning-input-field data-id="StageName" field-name="StageName" required ></lightning-input-field>
+                                <lightning-input-field data-id="loss_reason" field-name="Loss_Reason__c" required ></lightning-input-field>
+                            </template>
                             <template if:false={hideRequiredCheckboxField}>
-                            <lightning-input-field field-name="All_Contract_Details_complete__c" required>
-                            </lightning-input-field>
-                            <lightning-input-field field-name="Billing_Contact_identified__c" required>
-                            </lightning-input-field>
-                            <lightning-input-field field-name="PO_Populated__c" required>
-                            </lightning-input-field>
+                                <lightning-input-field field-name="All_Contract_Details_complete__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="Billing_Contact_identified__c" required>
+                                </lightning-input-field>
+                                <lightning-input-field field-name="PO_Populated__c" required>
+                                </lightning-input-field>
                             </template>
                         </template>
                     </template>

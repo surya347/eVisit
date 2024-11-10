@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Telehealth_Providers__c</fullName>
+    <label>Current Telehealth Providers</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Teladoc</fullName>
+                <default>false</default>
+                <label>Teladoc</label>
+            </value>
+            <value>
+                <fullName>Care.ai</fullName>
+                <default>false</default>
+                <label>Care.ai</label>
+            </value>
+            <value>
+                <fullName>Caregility</fullName>
+                <default>false</default>
+                <label>Caregility</label>
+            </value>
+            <value>
+                <fullName>Andor Health</fullName>
+                <default>false</default>
+                <label>Andor Health</label>
+            </value>
+            <value>
+                <fullName>Epic</fullName>
+                <default>false</default>
+                <label>Epic</label>
+            </value>
+            <value>
+                <fullName>Cerner</fullName>
+                <default>false</default>
+                <label>Cerner</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>AmWell</fullName>
+                <default>false</default>
+                <label>AmWell</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

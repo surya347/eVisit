@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Times_Moved_To_Greater_Than_Zero</fullName>
+    <active>true</active>
+    <description>The times moved to the stage/status must be greater than 0 and not null</description>
+    <errorConditionFormula>Times_Moved_To__c &lt;= 0</errorConditionFormula>
+    <errorDisplayField>Times_Moved_To__c</errorDisplayField>
+    <errorMessage>The Times Move To Field must be greater than 0</errorMessage>
+</ValidationRule>

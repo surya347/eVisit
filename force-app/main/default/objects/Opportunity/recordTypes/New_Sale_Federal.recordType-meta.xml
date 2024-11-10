@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Sale_Federal</fullName>
+    <active>true</active>
+    <businessProcess>eVisit Sales</businessProcess>
+    <label>New Sale (Federal)</label>
+    <picklistValues>
+        <picklist>Account_Type__c</picklist>
+        <values>
+            <fullName>Enterprise%2FStrategic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High-Touch %28CBA%2FIntegration%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28eVisit%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CSM_Owner__c</picklist>
+        <values>
+            <fullName>Dani Solano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geoff Traub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jackie Thomas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jan Frey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Josh Jackson</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Close_lost_to_competitor__c</picklist>
+        <values>
+            <fullName>American Well</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chiron Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doxy%2Eme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EHR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GlobalMed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDLive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SnapMD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teladoc Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VSee</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Length__c</picklist>
+        <values>
+            <fullName>1 year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 years</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Current_Telehealth_Providers__c</picklist>
+        <values>
+            <fullName>AmWell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Andor Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Care%2Eai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caregility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cerner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Epic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teladoc</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Severity__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DB_Competitor__c</picklist>
+        <values>
+            <fullName>Competitor A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not forecasted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Forecast_Status__c</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Integration_Needs__c</picklist>
+        <values>
+            <fullName>APK - Mobile App Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EHR ADT Feed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EHR Patient and Encounter Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EHR Scheduling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient SSO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provider SSO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Time Insurance Eligibility</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoicing_Plan__c</picklist>
+        <values>
+            <fullName>Net 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 60</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>ATA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Becker%E2%80%99s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHiME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ed Marx</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Customer %28CSMQL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HIMMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HLTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MedStar Qualified Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Prospecting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership - Aceso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership - Carashsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership - Chartis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership - Deloitte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership - ECG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership - Impact Advisors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership - Kirk Hendler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership - Premier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership - PwC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership - Siva Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership - Vizient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership - pCare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telehealth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tradeshow%2FConference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ViVe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eVisit Conferences</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeanData__Reporting_Opportunity_Source__c</picklist>
+        <values>
+            <fullName>Marketing Influenced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Sourced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor Strength</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need Provider Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Feature Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Fit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Abandoned by Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to Reseller - MEP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Modules__c</picklist>
+        <values>
+            <fullName>Appointment Reminders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Care Navigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insights and Care Coordination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Party Visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Information Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Intake and Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Scheduling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Visit Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient and Clinician Chat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient and Clinician Tools %28Virtual Visit%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Scheduling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Triage and Patient Routing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video or Audio Visit %28Virtual Visit%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Non_standard_Items__c</picklist>
+        <values>
+            <fullName>Escalated fee schedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term for Convenience</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Type__c</picklist>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Type__c</picklist>
+        <values>
+            <fullName>Add Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSG %28Custom Work%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebrand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stripe Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ePrescribe</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Specialties__c</picklist>
+        <values>
+            <fullName>Behavioral %28Psychiatry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cardiology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endocrinology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family Medicine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gastroenterology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital Medicine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Medicine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ob%2FGyn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orthopedics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pediatrics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surgery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upsell</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Use_Case__c</picklist>
+        <values>
+            <fullName>Behavioral Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correctional Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ED Telepsychiatry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ED Teletriage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oncology Virtual Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provider to Provider Consultations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialty Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tele-ICU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telestroke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Nursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Urgent Care</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>celigo_sfnsio__Bill_To_Tier__c</picklist>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End User</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>celigo_sfnsio__Ship_To_Tier__c</picklist>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End User</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eVisit_Noted_Differentiators__c</picklist>
+        <values>
+            <fullName>Customer Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Implementation Speed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Features</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROI%2FValue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

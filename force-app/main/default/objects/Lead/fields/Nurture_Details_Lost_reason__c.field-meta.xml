@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nurture_Details_Lost_reason__c</fullName>
+    <description>Field to get update with respect to opportunity. Created by CK Ext. 221</description>
+    <label>Nurture Details / Lost reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Interested in Competitor</fullName>
+                <default>false</default>
+                <label>Interested in Competitor</label>
+            </value>
+            <value>
+                <fullName>Contract Concerns</fullName>
+                <default>false</default>
+                <label>Contract Concerns</label>
+            </value>
+            <value>
+                <fullName>No Decision</fullName>
+                <default>false</default>
+                <label>No Decision</label>
+            </value>
+            <value>
+                <fullName>Non-responsive/Went Dark</fullName>
+                <default>false</default>
+                <label>Non-responsive/Went Dark</label>
+            </value>
+            <value>
+                <fullName>Just Researching</fullName>
+                <default>false</default>
+                <label>Just Researching</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Product</fullName>
+                <default>false</default>
+                <label>Product</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidationRule_4_SubjectRegulation</fullName>
+    <active>false</active>
+    <description>Validation rule to restrict the subject to the list of values mentioned in the picklist</description>
+    <errorConditionFormula>AND(
+Subject != &quot;Qualified Meeting with AE&quot;,
+Subject != &quot;Prospecting&quot;,
+Subject != &quot;Discovery&quot;,
+Subject != &quot;Opportunity&quot;,
+Subject != &quot;Demo&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Subject</errorDisplayField>
+    <errorMessage>Please type Qualified Meeting with AE/  Prospecting/ Discovery/ Opportunity/ Demo as Subject</errorMessage>
+</ValidationRule>
