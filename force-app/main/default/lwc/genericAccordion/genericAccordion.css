@@ -1,0 +1,37 @@
+.accordion {
+    border: 1px solid #aaa;
+    margin-bottom: 1em;
+    background: lightgrey;
+  }
+  
+  .accordion_summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+    /* display: revert; */
+    font-size: medium;
+  }
+  
+  .accordion[open] {
+    padding: 0.5em;
+  }
+  
+  .accordion[open] .accordion_summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 1em;
+  }
+  
+  details > summary {
+    list-style-type: '⮞';
+}
+
+details[open] > summary {
+    list-style-type: '⮟';
+}
+
+details {
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+

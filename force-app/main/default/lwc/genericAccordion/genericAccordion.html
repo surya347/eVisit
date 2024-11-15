@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-m-around_small">
+        <template for:each={recordData} for:item="record">
+            <details open class="accordion slds-m-bottom_medium" key={record.Id}>
+                <summary class="accordion_summary">{record.Question__c}</summary>
+                <p>Category: {record.Category__c}</p>
+                <lightning-button-group class="slds-m-top_medium slds-m-bottom_small">
+                    <lightning-button label="Yes" data-id={record.Id}></lightning-button>
+                    <lightning-button label="No" data-id={record.Id}></lightning-button>
+                </lightning-button-group>
+            </details>
+        </template>
+    </div>
+</template>
