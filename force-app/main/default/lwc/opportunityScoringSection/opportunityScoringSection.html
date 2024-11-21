@@ -1,5 +1,8 @@
 <template>
     <template if:true={hasOppRecords}>
-        <c-generic-accordion record-data={opportunityQuestions}></c-generic-accordion>
+        <template if:true={showLoading}>
+            <lightning-spinner alternative-text="Loading" size="medium" class="spinnerClass"></lightning-spinner>
+        </template>
+        <c-generic-accordion record-data={opportunityQuestions} onupdaterecord={handleQuestionUpdate}></c-generic-accordion>
     </template>
 </template>

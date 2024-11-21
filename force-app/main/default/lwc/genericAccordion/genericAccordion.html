@@ -3,11 +3,14 @@
         <template for:each={recordData} for:item="record">
             <details open class="accordion slds-m-bottom_medium" key={record.Id}>
                 <summary class="accordion_summary">{record.Question__c}</summary>
-                <p>Category: {record.Category__c}</p>
-                <lightning-button-group class="slds-m-top_medium slds-m-bottom_small">
-                    <lightning-button label="Yes" data-id={record.Id}></lightning-button>
-                    <lightning-button label="No" data-id={record.Id}></lightning-button>
-                </lightning-button-group>
+                <p class="slds-m-bottom_xx-small question_text"><strong>Category</strong>: {record.Category__c}</p>
+                <p class="question_text"><strong>Score</strong>: {record.Answer__c}</p>
+                <p class="question_text"><strong>Last Score Date</strong>: {record.Last_Score_Set__c}</p>
+                <div class="slds-m-top_medium slds-m-bottom_small">
+                    <lightning-slider data-id={record.Id} data-name={record.Question_Number__c}
+                                        size="small" step="1"
+                                        value={record.Answer__c} min="0" max={record.Score__c} onchange={handleScoring} ></lightning-slider>
+                </div>
             </details>
         </template>
     </div>

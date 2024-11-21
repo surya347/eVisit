@@ -1,7 +1,12 @@
+:host {
+  --slds-c-slider-track-color-background: orange;
+  --slds-c-slider-thumb-color-foreground: black;
+}
+
 .accordion {
     border: 1px solid #aaa;
     margin-bottom: 1em;
-    background: lightgrey;
+    background: #f6f6f6;
   }
   
   .accordion_summary {
@@ -10,6 +15,10 @@
     padding: 0.5em;
     /* display: revert; */
     font-size: medium;
+  }
+
+  .accordion p{
+    font-size: 14px;
   }
   
   .accordion[open] {
