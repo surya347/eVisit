@@ -9,7 +9,7 @@ notes='';
 scoreValue='';
 buttonLabel='Edit';
 recordsToUpdate=[];
-
+timer;
 
         handleNotes(event){
             this.notes = event.target.value;
@@ -31,10 +31,13 @@ recordsToUpdate=[];
         }
 
         handleScoring(event){
+            window.clearTimeout(this.timer)
             this.notes='';
             this.scoreValue = event.detail.value;
             let currentId = event.currentTarget.dataset.id;
-            this.fireCustomEvent(this.scoreValue,this.notes,currentId);
+            this.timer = setTimeout(()=>{
+                this.fireCustomEvent(this.scoreValue,this.notes,currentId);
+            }, 1000)
         }
 
         fireCustomEvent(scoreValue,notesValue,currentOppScoreId){
