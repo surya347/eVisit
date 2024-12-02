@@ -2,8 +2,9 @@ import { LightningElement,api,wire } from 'lwc';
 import { updateRecord } from 'lightning/uiRecordApi';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import OpportunityScore_ID_FIELD from '@salesforce/schema/Opportunity_Scores__c.Id';
-import OpportunityScore_Answer_FIELD from '@salesforce/schema/Opportunity_Scores__c.Answer__c';
+import OpportunityScore_Answer_FIELD from '@salesforce/schema/Opportunity_Scores__c.Answers__c';
 import OpportunityScore_LastScoreSet_FIELD from '@salesforce/schema/Opportunity_Scores__c.Last_Score_Set__c';
+import OpportunityScore_Notes_FIELD from '@salesforce/schema/Opportunity_Scores__c.Notes__c';
 import { refreshApex } from '@salesforce/apex';
 import getOpportunityQuestions from '@salesforce/apex/OpportunityController.getOpportunityQuestions';
 
@@ -15,6 +16,7 @@ export default class OpportunityScoringSection extends LightningElement {
     hasOppRecords;
     showLoading = false;
     oppQuestionToRefresh;
+    opportunityQuestion=[];
 
     connectedCallback(){
         return refreshApex(this.oppQuestionToRefresh);
@@ -42,23 +44,26 @@ export default class OpportunityScoringSection extends LightningElement {
     }
 
     handleQuestionUpdate(event){
-        console.log('scoreValue : '+JSON.stringify(event.detail.scoreValue));
-        console.log('currentOppScoreId : '+JSON.stringify(event.detail.currentOppScoreId));
-        this.updateQuestionsAnswer(event.detail.scoreValue,event.detail.currentOppScoreId);
+        this.updateQuestionsAnswer(event.detail.scoreValue,event.detail.notesValue,event.detail.currentOppScoreId);
     }
 
-    updateQuestionsAnswer(scoreValue,currentOppScoreId){
+    updateQuestionsAnswer(scoreValue,notesValue,currentOppScoreId){
         // return refreshApex(this.recordData);
         this.showLoading = true;
         var today = new Date().toISOString();
-        console.log('today: '+JSON.stringify(today));
+        // console.log('today: '+JSON.stringify(today));
 
         const fields = {};
         fields[OpportunityScore_ID_FIELD.fieldApiName] = currentOppScoreId;
-        fields[OpportunityScore_Answer_FIELD.fieldApiName] = scoreValue;
-        fields[OpportunityScore_LastScoreSet_FIELD.fieldApiName] = today;
+        if(scoreValue !== '' && scoreValue != undefined){
+            fields[OpportunityScore_Answer_FIELD.fieldApiName] = scoreValue;
+            fields[OpportunityScore_LastScoreSet_FIELD.fieldApiName] = today;
+        }
+        if(notesValue !== '' && notesValue != undefined){
+            fields[OpportunityScore_Notes_FIELD.fieldApiName] = notesValue;
+        }
         const recordInput = { fields };
-        console.log('recordInput',recordInput);
+        // console.log('recordInput',recordInput);
 
         updateRecord(recordInput)
         .then(() => {
