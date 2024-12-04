@@ -11,6 +11,9 @@ public class OpportunityControllerTest {
         Opportunity opps = new Opportunity(Name='Test',Amount=12,stageName='Discovery and Qualification',AccountId=accs.Id,LeadSource='Website',ARR__c=10,Use_Case__c='Primary Care',CloseDate=dt,Implementation_Fee__c=10);
         insert opps;
           
+        Opportunity_Scores__c score = new Opportunity_Scores__c(Name='Test Score', Opportunity__c=opps.Id);
+        insert score;
+          
         Opportunity opps1 = new Opportunity(Name='Test1',Amount=12,stageName='Closed Won',AccountId=accs.Id,LeadSource='Website',ARR__c=10,Use_Case__c='Primary Care',CloseDate=dt,Implementation_Fee__c=10);
         insert opps1;
         
@@ -43,6 +46,12 @@ public class OpportunityControllerTest {
         List<Opportunity> newoppLIst = [Select id,Name,Amount,stageName,AccountId,LeadSource,ARR__c,Implementation_Fee__c,Use_Case__c from Opportunity Where Name = 'Test'];
         String s = OpportunityController.getRecordDetails(newoppLIst[0].Id);
         System.assertEquals(s,'Discovery and Qualification');
+    }
+    
+    @isTest static void getOpportunityQuestionsTest(){
+        List<Opportunity> newoppLIst = [Select id,Name,Amount,stageName,AccountId,LeadSource,ARR__c,Implementation_Fee__c,Use_Case__c from Opportunity Where Name = 'Test'];
+        List<Opportunity_Scores__c> s = OpportunityController.getOpportunityQuestions(newoppLIst[0].Id);
+        System.assert(s.size() > 0);
     }
 
 }

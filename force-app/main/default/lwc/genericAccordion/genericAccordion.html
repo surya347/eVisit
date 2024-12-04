@@ -10,7 +10,7 @@
                         <p class="question_text"><strong>Last Score Date</strong>: {record.Last_Score_Set__c}</p>
                         <div class="slds-m-top_medium slds-m-bottom_small">
                             <lightning-slider data-id={record.Id} data-name={record.Question_Number__c} size="small"
-                                step="1" value={record.Answers__c} min="0" max={record.Score__c}
+                                step="1" value={record.Answers__c} min="0" max={record.Max_Score__c}
                                 onchange={handleScoring}></lightning-slider>
                         </div>
                     </lightning-layout-item>

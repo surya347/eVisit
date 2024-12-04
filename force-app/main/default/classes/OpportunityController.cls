@@ -82,8 +82,8 @@ public class OpportunityController {
     
     @AuraEnabled(cacheable=true)
     public static List<Opportunity_Scores__c> getOpportunityQuestions(String opportunityId){
-        List<Opportunity_Scores__c> questionList = [Select id,Question__c,Question_Number__c,Answer__c, Category__c, 
-                                                    Last_Score_Set__c, Name, Notes__c,Score__c 
+        List<Opportunity_Scores__c> questionList = [Select id,Question__c,Question_Number__c,Answers__c, Category__c, 
+                                                    Last_Score_Set__c, Name, Notes__c,Max_Score__c 
                                                     from Opportunity_Scores__c 
                                                     Where Opportunity__c =: opportunityId];
         if(!questionList.isEmpty()){
